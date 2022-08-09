@@ -80,15 +80,14 @@ WSGI_APPLICATION = 'ohtsuka_app_backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'NAME': os.environ.get('DB_NAME'),
-            'USER': os.environ.get('USER'),
-            'PASSWORD': os.environ.get('PASSWORD'),
-            'HOST': os.environ.get('HOST'),
-        },
+        'NAME': os.environ.get('DB_NAME'),
+        'HOST': os.environ.get('HOST'),
+        'PORT': os.environ.get('PORT'),
+        'USER': os.environ.get('USER'),
+        'PASSWORD': os.environ.get('PASSWORD'),
     }
 }
-
+print(DATABASES)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
