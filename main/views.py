@@ -21,3 +21,4 @@ class OptItemmastermainViewsets (viewsets.ModelViewSet):
 class OptDbseikeimdrcrossoutViewsets (viewsets.ModelViewSet):
     serializer_class = OptDbseikeimdrcrossoutSerializer
     queryset = OptDbseikeimdrcrossout.objects.all()
+    lookup_field = 'ctlno'
