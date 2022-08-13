@@ -13,6 +13,7 @@ from .serializers import (
 class TboperatorlistViewsets (viewsets.ModelViewSet):
     serializer_class = TboperatorlistSerializer
     queryset = Tboperatorlist.objects.all()
+    lookup_field = 'id'
 
 class OptItemmastermainViewsets (viewsets.ModelViewSet):
     serializer_class = OptItemmastermainSerializer

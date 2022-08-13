@@ -6,6 +6,7 @@ from .views import (
 )
 
 router = routers.SimpleRouter()
+router.register(r'operators', TboperatorlistViewsets)
 router.register(r'crossout', OptDbseikeimdrcrossoutViewsets)
 
 urlpatterns = router.urls
