@@ -10,15 +10,6 @@ class Tboperatorlist(models.Model):
         managed = False
         db_table = 'tboperatorlist'
 
-class Tbfarminsubconstocks(models.Model):
-    recordid = models.BigAutoField(db_column='recordID', primary_key=True)  # Field name made lowercase.
-    itmcd = models.CharField(db_column='ITMCD', max_length=11)  # Field name made lowercase.
-    fqty = models.IntegerField(db_column='FQTY')  # Field name made lowercase.
-
-    class Meta:
-        managed = False
-        db_table = 'tbfarminsubconstocks'
-
 # class OptItemmastermain(models.Model):
 #     itemid = models.BigAutoField(db_column='ItemID', primary_key=True)  # Field name made lowercase.
 #     itemno = models.CharField(db_column='ItemNo', max_length=50)  # Field name made lowercase.
@@ -114,3 +105,7 @@ class OptDbseikeimdrcrossout(models.Model):
     class Meta:
         managed = False
         db_table = 'opt_dbseikeimdrcrossout'
+
+class CrossoutOperator(models.Model):
+    crossout = models.CharField(max_length=100)
+    operator = models.CharField(max_length=50)
