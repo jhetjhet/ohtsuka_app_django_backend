@@ -29,7 +29,3 @@ class OptDbseikeimdrcrossout(models.Model):
     class Meta:
         managed = False
         db_table = 'opt_dbseikeimdrcrossout'
-
-class CrossoutOperator(models.Model):
-    crossout = models.CharField(max_length=100)
-    operator = models.CharField(max_length=50)
