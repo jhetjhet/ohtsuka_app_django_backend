@@ -17,7 +17,7 @@ class OptDbseikeimdrcrossout(models.Model):
     grsqty = models.IntegerField(db_column='GRSQTY')  # Field name made lowercase.
     molder = models.IntegerField(db_column='MOLDER')  # Field name made lowercase.
     encoder = models.CharField(db_column='ENCODER', max_length=20)  # Field name made lowercase.
-    inputdate = models.DateTimeField(db_column='INPUTDATE')  # Field name made lowercase.
+    inputdate = models.DateTimeField(db_column='INPUTDATE', auto_now_add=True)  # Field name made lowercase.
     moldrej = models.IntegerField(db_column='MOLDREJ')  # Field name made lowercase.
     machineno = models.CharField(db_column='MachineNo', max_length=100)  # Field name made lowercase.
     moldno = models.CharField(db_column='MOLDNO', max_length=100)  # Field name made lowercase.
