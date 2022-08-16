@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import (
     Tboperatorlist,
-    OptItemmastermain,
+    # OptItemmastermain,
     OptDbseikeimdrcrossout,
 )
 
@@ -11,11 +11,11 @@ class TboperatorlistSerializer (serializers.ModelSerializer):
         model = Tboperatorlist
         fields = '__all__'
 
-class OptItemmastermainSerializer (serializers.ModelSerializer):
+# class OptItemmastermainSerializer (serializers.ModelSerializer):
     
-    class Meta:
-        model = OptItemmastermain
-        fields = '__all__'
+#     class Meta:
+#         model = OptItemmastermain
+#         fields = '__all__'
 
 class OptDbseikeimdrcrossoutSerializer (serializers.ModelSerializer):
     

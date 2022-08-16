@@ -1,7 +1,7 @@
 from rest_framework import routers
 from .views import (
     TboperatorlistViewsets,
-    OptItemmastermainViewsets,
+    # OptItemmastermainViewsets,
     OptDbseikeimdrcrossoutViewsets,
 )
 

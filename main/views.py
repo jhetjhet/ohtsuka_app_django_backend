@@ -2,12 +2,12 @@ from rest_framework import viewsets
 from django.http import Http404
 from .models import (
     Tboperatorlist,
-    OptItemmastermain,
+    # OptItemmastermain,
     OptDbseikeimdrcrossout,
 )
 from .serializers import (
     TboperatorlistSerializer,
-    OptItemmastermainSerializer,
+    # OptItemmastermainSerializer,
     OptDbseikeimdrcrossoutSerializer,
 )
 
@@ -22,9 +22,9 @@ class TboperatorlistViewsets (viewsets.ModelViewSet):
             raise Http404()
         return res
 
-class OptItemmastermainViewsets (viewsets.ModelViewSet):
-    serializer_class = OptItemmastermainSerializer
-    queryset = OptItemmastermain.objects.all()
+# class OptItemmastermainViewsets (viewsets.ModelViewSet):
+#     serializer_class = OptItemmastermainSerializer
+#     queryset = OptItemmastermain.objects.all()
 
 class OptDbseikeimdrcrossoutViewsets (viewsets.ModelViewSet):
     serializer_class = OptDbseikeimdrcrossoutSerializer
